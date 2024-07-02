@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}XXX{% endblock %}</title>
+    </head>
+    <body>
+        <div style="width: 100%;height: 50px;">
+            <a href="{% url 'index' %}" style="display: block;text-decoration: none;color: black;width: 100px;float: left;">Все</a>
+            <a href="{% url 'day' %}" style="display: block;text-decoration: none;color: black;width: 100px;float: left;">7 дней</a>
+            <a href="{% url 'month' %}" style="display: block;text-decoration: none;color: black;width: 100px;float: left;">30 дней</a>
+            <a href="{% url 'year' %}" style="display: block;text-decoration: none;color: black;width: 100px;float: left;">365 дней</a>
+            <a href="{% url 'upload_image' %}" style="display: block;text-decoration: none;color: black;width: 100px;float: left;">Upload Image</a>
+        </div>
+        <hr>
+        <div>
+            {% block content %}
+                <p>Нахрена дохрена нахреначил? Расхреначивай нахрен!</p>
+            {% endblock %} 
+        </div>
+        <div>
+            FOOTER
+        </div>
+    </body>
+</html>

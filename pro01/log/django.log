@@ -1,0 +1,434 @@
+Watching for file changes with StatReloader
+About page accessed.
+"GET /about/ HTTP/1.1" 200 97
+Index page accessed.
+"GET / HTTP/1.1" 200 117
+D:\учеба\api\pro01\pro01\settings.py changed, reloading.
+INFO 2024-06-20 21:28:13,790 autoreload 6152 2336 Watching for file changes with StatReloader
+INFO 2024-06-20 21:28:19,951 views 6152 6672 Index page accessed.
+INFO 2024-06-20 21:28:19,952 basehttp 6152 6672 "GET / HTTP/1.1" 200 117
+INFO 2024-06-20 21:28:23,922 views 6152 6672 About page accessed.
+INFO 2024-06-20 21:28:23,923 basehttp 6152 6672 "GET /about/ HTTP/1.1" 200 97
+INFO 2024-06-21 13:37:36,394 autoreload 6464 3900 Watching for file changes with StatReloader
+INFO 2024-07-01 13:40:13,631 autoreload 4764 624 Watching for file changes with StatReloader
+INFO 2024-07-02 12:18:25,320 autoreload 8940 1260 Watching for file changes with StatReloader
+INFO 2024-07-02 12:18:52,077 autoreload 8940 1260 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:18:52,461 autoreload 7612 10108 Watching for file changes with StatReloader
+ERROR 2024-07-02 12:19:05,140 log 7612 8884 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\pro01\myapp3\views.py", line 8, in index
+    http=str(datetime.today())
+             ^^^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'today'
+ERROR 2024-07-02 12:19:05,143 basehttp 7612 8884 "GET / HTTP/1.1" 500 64181
+WARNING 2024-07-02 12:19:05,297 log 7612 8884 Not Found: /favicon.ico
+WARNING 2024-07-02 12:19:05,298 basehttp 7612 8884 "GET /favicon.ico HTTP/1.1" 404 2874
+INFO 2024-07-02 12:19:26,452 autoreload 7612 10108 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:19:26,813 autoreload 9800 2724 Watching for file changes with StatReloader
+INFO 2024-07-02 12:19:30,322 basehttp 9800 3964 "GET / HTTP/1.1" 200 26
+INFO 2024-07-02 12:20:41,717 autoreload 9800 2724 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:20:42,094 autoreload 7228 9524 Watching for file changes with StatReloader
+INFO 2024-07-02 12:20:47,368 basehttp 7228 2964 "GET / HTTP/1.1" 200 8
+INFO 2024-07-02 12:21:05,913 autoreload 7228 9524 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:21:06,340 autoreload 9116 3980 Watching for file changes with StatReloader
+INFO 2024-07-02 12:21:08,903 basehttp 9116 8392 "GET / HTTP/1.1" 200 10
+INFO 2024-07-02 12:23:44,997 autoreload 9116 3980 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:23:45,365 autoreload 7920 7216 Watching for file changes with StatReloader
+INFO 2024-07-02 12:23:48,495 basehttp 7920 9532 "GET / HTTP/1.1" 200 10
+INFO 2024-07-02 12:25:08,478 autoreload 7920 7216 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:25:08,875 autoreload 4620 9124 Watching for file changes with StatReloader
+INFO 2024-07-02 12:25:11,051 basehttp 4620 3080 "GET / HTTP/1.1" 200 10
+INFO 2024-07-02 12:35:57,990 autoreload 4620 9124 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:35:58,422 autoreload 3572 4936 Watching for file changes with StatReloader
+ERROR 2024-07-02 12:36:05,213 log 3572 2920 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\pro01\myapp3\views.py", line 12, in index
+    res =  Order.objects.filter(date_ordered__range=(datetime.date(yy, mm - 1, dd), datetime.date(yy, mm, dd)))
+                                                                       ~~~^~~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+ERROR 2024-07-02 12:36:05,214 basehttp 3572 2920 "GET / HTTP/1.1" 500 64614
+INFO 2024-07-02 12:36:40,681 autoreload 3572 4936 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:36:41,092 autoreload 4528 9524 Watching for file changes with StatReloader
+ERROR 2024-07-02 12:36:47,016 log 4528 10148 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\pro01\myapp3\views.py", line 12, in index
+    res =  Order.objects.filter(date_ordered__range=(datetime.date(yy, mm - 1, dd), datetime.date(yy, mm, dd)))
+                                                                       ~~~^~~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+ERROR 2024-07-02 12:36:47,018 basehttp 4528 10148 "GET / HTTP/1.1" 500 64609
+INFO 2024-07-02 12:37:34,506 autoreload 4528 9524 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:37:34,927 autoreload 7356 9800 Watching for file changes with StatReloader
+ERROR 2024-07-02 12:37:36,627 log 7356 8840 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\pro01\myapp3\views.py", line 12, in index
+    res =  Order.objects.filter(date_ordered__range=(datetime.date(yy, str(int(mm) - 1), dd), datetime.date(yy, mm, dd)))
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR 2024-07-02 12:37:36,629 basehttp 7356 8840 "GET / HTTP/1.1" 500 64611
+INFO 2024-07-02 12:38:19,211 autoreload 7356 9800 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:38:19,643 autoreload 6296 1148 Watching for file changes with StatReloader
+ERROR 2024-07-02 12:38:21,711 log 6296 8040 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\pro01\myapp3\views.py", line 12, in index
+    res =  Order.objects.filter(date_ordered__range=(datetime.date(yy, mm2, dd), datetime.date(yy, mm, dd)))
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object cannot be interpreted as an integer
+ERROR 2024-07-02 12:38:21,713 basehttp 6296 8040 "GET / HTTP/1.1" 500 64732
+INFO 2024-07-02 12:40:11,341 autoreload 6296 1148 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 12:40:11,753 autoreload 8576 8616 Watching for file changes with StatReloader
+INFO 2024-07-02 12:40:14,131 basehttp 8576 3980 "GET / HTTP/1.1" 200 126
+INFO 2024-07-02 13:05:08,931 autoreload 8576 8616 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 13:05:09,306 autoreload 9344 1376 Watching for file changes with StatReloader
+INFO 2024-07-02 13:06:38,330 autoreload 9344 1376 D:\учеба\api\pro01\myapp3\models.py changed, reloading.
+INFO 2024-07-02 13:06:38,693 autoreload 10000 9268 Watching for file changes with StatReloader
+INFO 2024-07-02 13:25:01,134 basehttp 10000 8096 "GET / HTTP/1.1" 200 126
+INFO 2024-07-02 13:25:13,363 autoreload 10000 9268 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 13:25:13,729 autoreload 6224 9128 Watching for file changes with StatReloader
+INFO 2024-07-02 13:25:19,072 basehttp 6224 6244 "GET / HTTP/1.1" 200 10
+INFO 2024-07-02 13:33:29,584 basehttp 6224 9280 "GET / HTTP/1.1" 200 10
+INFO 2024-07-02 13:33:32,309 basehttp 6224 9280 "GET / HTTP/1.1" 200 10
+INFO 2024-07-02 13:33:37,563 autoreload 6224 9128 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 13:33:37,991 autoreload 8504 8984 Watching for file changes with StatReloader
+INFO 2024-07-02 13:33:40,816 basehttp 8504 7928 "GET / HTTP/1.1" 200 126
+INFO 2024-07-02 13:47:56,570 autoreload 8504 8984 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 13:47:56,957 autoreload 880 6996 Watching for file changes with StatReloader
+INFO 2024-07-02 13:54:31,773 autoreload 880 6996 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 13:54:32,172 autoreload 624 7544 Watching for file changes with StatReloader
+INFO 2024-07-02 13:54:41,028 basehttp 624 10020 "GET / HTTP/1.1" 200 273
+INFO 2024-07-02 14:07:09,992 basehttp 624 7220 "GET / HTTP/1.1" 200 340
+INFO 2024-07-02 14:39:29,680 autoreload 624 7544 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 14:39:30,052 autoreload 9376 9888 Watching for file changes with StatReloader
+INFO 2024-07-02 14:44:45,955 autoreload 9376 9888 D:\учеба\api\pro01\myapp3\urls.py changed, reloading.
+INFO 2024-07-02 14:44:46,348 autoreload 6040 8236 Watching for file changes with StatReloader
+INFO 2024-07-02 14:44:48,651 autoreload 6040 8236 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 14:44:49,014 autoreload 2656 7076 Watching for file changes with StatReloader
+INFO 2024-07-02 14:46:22,224 autoreload 2656 7076 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 14:46:22,627 autoreload 252 7436 Watching for file changes with StatReloader
+INFO 2024-07-02 14:46:47,839 basehttp 252 9196 "GET / HTTP/1.1" 200 886
+INFO 2024-07-02 14:46:53,966 basehttp 252 9196 "GET / HTTP/1.1" 200 886
+INFO 2024-07-02 14:46:55,646 basehttp 252 9196 "GET / HTTP/1.1" 200 886
+INFO 2024-07-02 14:46:56,677 basehttp 252 9196 "GET / HTTP/1.1" 200 886
+INFO 2024-07-02 14:47:45,152 basehttp 252 9196 "GET / HTTP/1.1" 200 886
+INFO 2024-07-02 15:02:07,856 autoreload 252 7436 D:\учеба\api\pro01\myapp3\models.py changed, reloading.
+INFO 2024-07-02 15:02:08,253 autoreload 10096 8400 Watching for file changes with StatReloader
+INFO 2024-07-02 15:02:13,921 basehttp 10096 9968 "GET / HTTP/1.1" 200 926
+INFO 2024-07-02 15:02:54,925 autoreload 10096 8400 D:\учеба\api\pro01\myapp3\models.py changed, reloading.
+INFO 2024-07-02 15:02:55,311 autoreload 7076 3368 Watching for file changes with StatReloader
+INFO 2024-07-02 15:02:58,816 basehttp 7076 9540 "GET / HTTP/1.1" 200 886
+INFO 2024-07-02 15:03:57,463 basehttp 7076 9540 "GET / HTTP/1.1" 200 992
+ERROR 2024-07-02 15:03:59,909 log 7076 9540 Internal Server Error: /zakazy/nedelya/
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: day() missing 3 required positional arguments: 'year', 'month', and 'day'
+ERROR 2024-07-02 15:03:59,910 basehttp 7076 9540 "GET /zakazy/nedelya/ HTTP/1.1" 500 61344
+INFO 2024-07-02 15:05:31,415 autoreload 7076 3368 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 15:05:31,803 autoreload 372 6164 Watching for file changes with StatReloader
+INFO 2024-07-02 15:05:35,596 basehttp 372 8944 "GET /zakazy/nedelya/ HTTP/1.1" 200 992
+INFO 2024-07-02 15:05:41,013 basehttp 372 8944 "GET /zakazy/mesyac/ HTTP/1.1" 200 992
+INFO 2024-07-02 15:05:45,695 basehttp 372 8944 "GET /zakazy/god/ HTTP/1.1" 200 992
+INFO 2024-07-02 15:20:03,819 basehttp 372 2200 "GET /zakazy/god/ HTTP/1.1" 200 971
+INFO 2024-07-02 15:20:10,157 basehttp 372 2200 "GET /zakazy/nedelya/ HTTP/1.1" 200 971
+INFO 2024-07-02 15:20:56,378 basehttp 372 2200 "GET /zakazy/nedelya/ HTTP/1.1" 200 929
+INFO 2024-07-02 15:20:59,862 basehttp 372 2200 "GET /zakazy/mesyac/ HTTP/1.1" 200 929
+INFO 2024-07-02 15:21:00,551 basehttp 372 2200 "GET /zakazy/god/ HTTP/1.1" 200 929
+INFO 2024-07-02 15:21:47,272 basehttp 372 2200 "GET /zakazy/god/ HTTP/1.1" 200 941
+INFO 2024-07-02 15:21:52,574 basehttp 372 2200 "GET /zakazy/nedelya/ HTTP/1.1" 200 941
+INFO 2024-07-02 15:21:53,764 basehttp 372 2200 "GET /zakazy/mesyac/ HTTP/1.1" 200 941
+INFO 2024-07-02 15:21:54,439 basehttp 372 2200 "GET /zakazy/god/ HTTP/1.1" 200 941
+INFO 2024-07-02 15:26:25,383 basehttp 372 2200 "GET /zakazy/nedelya/ HTTP/1.1" 200 941
+INFO 2024-07-02 15:26:26,639 basehttp 372 2200 "GET /zakazy/mesyac/ HTTP/1.1" 200 941
+INFO 2024-07-02 15:26:30,534 basehttp 372 2200 "GET /zakazy/god/ HTTP/1.1" 200 941
+INFO 2024-07-02 15:31:41,392 basehttp 372 1744 "GET /zakazy/god/ HTTP/1.1" 200 835
+INFO 2024-07-02 15:31:43,182 basehttp 372 1744 "GET /zakazy/mesyac/ HTTP/1.1" 200 835
+INFO 2024-07-02 15:31:44,141 basehttp 372 1744 "GET /zakazy/nedelya/ HTTP/1.1" 200 835
+INFO 2024-07-02 15:31:45,176 basehttp 372 1744 "GET /zakazy/god/ HTTP/1.1" 200 835
+INFO 2024-07-02 15:31:55,555 basehttp 372 1744 "GET / HTTP/1.1" 200 941
+INFO 2024-07-02 15:33:09,583 basehttp 372 1744 "GET / HTTP/1.1" 200 1060
+INFO 2024-07-02 15:33:11,655 basehttp 372 1744 "GET /zakazy/nedelya/ HTTP/1.1" 200 954
+INFO 2024-07-02 15:33:13,008 basehttp 372 1744 "GET /zakazy/mesyac/ HTTP/1.1" 200 954
+INFO 2024-07-02 15:33:13,693 basehttp 372 1744 "GET /zakazy/god/ HTTP/1.1" 200 954
+INFO 2024-07-02 15:33:14,779 basehttp 372 1744 "GET / HTTP/1.1" 200 1060
+INFO 2024-07-02 15:34:39,651 basehttp 372 1744 "GET /zakazy/nedelya/ HTTP/1.1" 200 954
+INFO 2024-07-02 15:34:41,582 basehttp 372 1744 "GET /zakazy/mesyac/ HTTP/1.1" 200 954
+INFO 2024-07-02 15:34:42,558 basehttp 372 1744 "GET /zakazy/god/ HTTP/1.1" 200 954
+INFO 2024-07-02 15:34:44,511 basehttp 372 1744 "GET / HTTP/1.1" 200 1060
+INFO 2024-07-02 15:39:31,316 autoreload 252 6384 Watching for file changes with StatReloader
+INFO 2024-07-02 15:39:36,023 basehttp 252 9704 "GET / HTTP/1.1" 200 1270
+INFO 2024-07-02 15:39:37,904 basehttp 252 9704 "GET /zakazy/nedelya/ HTTP/1.1" 200 954
+INFO 2024-07-02 15:39:39,542 basehttp 252 9704 "GET /zakazy/mesyac/ HTTP/1.1" 200 1059
+INFO 2024-07-02 15:39:40,983 basehttp 252 9704 "GET /zakazy/god/ HTTP/1.1" 200 1164
+INFO 2024-07-02 18:02:26,950 autoreload 252 6384 D:\учеба\api\pro01\pro01\settings.py changed, reloading.
+INFO 2024-07-02 18:02:27,334 autoreload 5604 7564 Watching for file changes with StatReloader
+INFO 2024-07-02 18:10:19,048 autoreload 5604 7564 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 18:10:19,426 autoreload 10568 7012 Watching for file changes with StatReloader
+INFO 2024-07-02 18:10:26,049 basehttp 10568 9884 "GET /zakazy/nedelya/ HTTP/1.1" 200 954
+INFO 2024-07-02 18:10:27,955 basehttp 10568 9884 "GET /zakazy/mesyac/ HTTP/1.1" 200 954
+INFO 2024-07-02 18:10:29,736 basehttp 10568 9884 "GET /zakazy/god/ HTTP/1.1" 200 954
+INFO 2024-07-02 18:10:32,562 basehttp 10568 9884 "GET / HTTP/1.1" 200 1270
+INFO 2024-07-02 18:10:34,975 basehttp 10568 9884 "GET /zakazy/nedelya/ HTTP/1.1" 200 954
+INFO 2024-07-02 18:10:36,824 basehttp 10568 9884 "GET /zakazy/mesyac/ HTTP/1.1" 200 954
+INFO 2024-07-02 18:10:37,954 basehttp 10568 9884 "GET /zakazy/god/ HTTP/1.1" 200 954
+INFO 2024-07-02 18:10:39,194 basehttp 10568 9884 "GET / HTTP/1.1" 200 1270
+INFO 2024-07-02 18:10:59,644 autoreload 10568 7012 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 18:11:00,060 autoreload 10296 9504 Watching for file changes with StatReloader
+INFO 2024-07-02 18:11:02,732 basehttp 10296 9404 "GET /zakazy/nedelya/ HTTP/1.1" 200 954
+INFO 2024-07-02 18:11:03,648 basehttp 10296 9404 "GET /zakazy/mesyac/ HTTP/1.1" 200 1059
+INFO 2024-07-02 18:11:04,937 basehttp 10296 9404 "GET /zakazy/god/ HTTP/1.1" 200 1164
+INFO 2024-07-02 18:11:08,417 basehttp 10296 9404 "GET / HTTP/1.1" 200 1270
+INFO 2024-07-02 18:13:45,281 basehttp 10296 9404 "GET /zakazy/mesyac/ HTTP/1.1" 200 1059
+INFO 2024-07-02 18:15:27,371 autoreload 10296 9504 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 18:15:27,760 autoreload 10948 3268 Watching for file changes with StatReloader
+INFO 2024-07-02 18:15:30,483 basehttp 10948 10168 "GET /zakazy/mesyac/ HTTP/1.1" 200 1059
+INFO 2024-07-02 18:15:31,784 basehttp 10948 10168 "GET /zakazy/nedelya/ HTTP/1.1" 200 954
+INFO 2024-07-02 18:15:33,160 basehttp 10948 10168 "GET /zakazy/god/ HTTP/1.1" 200 1164
+INFO 2024-07-02 18:16:17,191 autoreload 10948 3268 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 18:16:17,569 autoreload 9408 8244 Watching for file changes with StatReloader
+INFO 2024-07-02 18:16:20,092 basehttp 9408 10976 "GET /zakazy/god/ HTTP/1.1" 200 1164
+INFO 2024-07-02 18:16:21,322 basehttp 9408 10976 "GET /zakazy/mesyac/ HTTP/1.1" 200 1059
+INFO 2024-07-02 18:16:22,504 basehttp 9408 10976 "GET /zakazy/nedelya/ HTTP/1.1" 200 954
+INFO 2024-07-02 18:16:23,451 basehttp 9408 10976 "GET / HTTP/1.1" 200 1270
+INFO 2024-07-02 18:26:52,885 autoreload 9408 8244 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 18:26:53,316 autoreload 10140 11060 Watching for file changes with StatReloader
+INFO 2024-07-02 18:33:58,167 autoreload 10140 11060 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 18:40:23,415 autoreload 10384 3656 Watching for file changes with StatReloader
+INFO 2024-07-02 18:45:58,629 autoreload 10384 3656 D:\учеба\api\pro01\myapp3\urls.py changed, reloading.
+INFO 2024-07-02 18:45:59,006 autoreload 7780 2892 Watching for file changes with StatReloader
+INFO 2024-07-02 18:56:02,925 autoreload 7780 2892 D:\учеба\api\pro01\myapp3\views.py changed, reloading.
+INFO 2024-07-02 18:56:03,322 autoreload 10144 10080 Watching for file changes with StatReloader
+INFO 2024-07-02 18:57:07,508 basehttp 10144 7712 "GET / HTTP/1.1" 200 1402
+ERROR 2024-07-02 18:57:08,670 log 10144 7712 Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\pro01\myapp3\views.py", line 45, in upload_image
+    return render(request, 'myapp3/upload_image.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "D:\учеба\api\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-07-02 18:57:08,677 basehttp 10144 7712 "GET /upload/ HTTP/1.1" 500 124705
+ERROR 2024-07-02 18:57:45,248 log 10144 7712 Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: app3/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\pro01\myapp3\views.py", line 45, in upload_image
+    return render(request, 'myapp3/upload_image.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\учеба\api\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "D:\учеба\api\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: app3/base.html
+ERROR 2024-07-02 18:57:45,254 basehttp 10144 7712 "GET /upload/ HTTP/1.1" 500 124990
+INFO 2024-07-02 18:57:58,269 basehttp 10144 7712 "GET /upload/ HTTP/1.1" 200 1444
+INFO 2024-07-02 18:58:57,654 basehttp 10144 7712 "POST /upload/ HTTP/1.1" 200 1444
+INFO 2024-07-02 19:00:46,552 autoreload 10144 10080 D:\учеба\api\pro01\myapp3\models.py changed, reloading.
+INFO 2024-07-02 19:00:46,949 autoreload 3980 11076 Watching for file changes with StatReloader
+INFO 2024-07-02 19:07:54,929 autoreload 11088 8196 Watching for file changes with StatReloader
+INFO 2024-07-02 19:08:09,987 basehttp 11088 7236 "GET / HTTP/1.1" 200 1402
+INFO 2024-07-02 19:08:11,460 basehttp 11088 7236 "GET /zakazy/nedelya/ HTTP/1.1" 200 1086
+INFO 2024-07-02 19:08:12,453 basehttp 11088 7236 "GET /zakazy/mesyac/ HTTP/1.1" 200 1191
+INFO 2024-07-02 19:08:13,261 basehttp 11088 7236 "GET /zakazy/god/ HTTP/1.1" 200 1296
+INFO 2024-07-02 19:08:14,312 basehttp 11088 7236 "GET /upload/ HTTP/1.1" 200 1444
+INFO 2024-07-02 21:21:10,223 autoreload 9280 10196 Watching for file changes with StatReloader
+INFO 2024-07-02 21:21:11,069 basehttp 9280 10320 "GET /admin HTTP/1.1" 301 0
+INFO 2024-07-02 21:21:11,109 basehttp 9280 10108 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-07-02 21:21:11,176 basehttp 9280 10108 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2024-07-02 21:21:11,351 basehttp 9280 10108 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-07-02 21:21:11,354 basehttp 9280 1976 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-07-02 21:21:11,355 basehttp 9280 3812 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-07-02 21:21:11,473 basehttp 9280 3812 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-07-02 21:21:11,473 basehttp 9280 1976 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-07-02 21:21:11,474 basehttp 9280 10108 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-07-02 21:21:11,518 basehttp 9280 10108 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-07-02 21:23:03,087 autoreload 9280 10196 D:\учеба\api\pro01\pro01\settings.py changed, reloading.
+INFO 2024-07-02 21:23:03,482 autoreload 2268 8328 Watching for file changes with StatReloader
+INFO 2024-07-02 21:23:19,433 basehttp 2268 10356 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-07-02 21:44:01,786 autoreload 8608 9276 Watching for file changes with StatReloader
+INFO 2024-07-02 21:44:09,139 basehttp 8608 1140 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4359
+INFO 2024-07-02 21:44:16,223 basehttp 8608 1140 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-07-02 21:44:16,269 basehttp 8608 1140 "GET /admin/ HTTP/1.1" 200 5944
+INFO 2024-07-02 21:44:16,339 basehttp 8608 1140 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-07-02 21:44:16,420 basehttp 8608 1140 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-07-02 21:44:16,424 basehttp 8608 9928 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-07-02 22:00:51,446 autoreload 8608 9276 D:\учеба\api\pro01\myapp3\admin.py changed, reloading.
+INFO 2024-07-02 22:00:51,844 autoreload 6428 11220 Watching for file changes with StatReloader
+INFO 2024-07-02 22:00:58,919 basehttp 6428 10684 "GET /admin/ HTTP/1.1" 200 7512
+INFO 2024-07-02 22:00:58,987 basehttp 6428 10684 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-07-02 22:01:04,401 basehttp 6428 10684 "GET /admin/myapp3/client/ HTTP/1.1" 200 10119
+INFO 2024-07-02 22:01:04,780 basehttp 6428 10684 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-07-02 22:01:04,786 basehttp 6428 10852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:01:04,801 basehttp 6428 10852 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-07-02 22:01:04,808 basehttp 6428 10852 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-07-02 22:01:04,808 basehttp 6428 10684 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-07-02 22:01:04,816 basehttp 6428 8988 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-07-02 22:01:04,817 basehttp 6428 10076 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-07-02 22:01:04,821 basehttp 6428 10852 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-07-02 22:01:04,823 basehttp 6428 11108 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-07-02 22:01:04,828 basehttp 6428 11196 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-07-02 22:01:04,866 basehttp 6428 11196 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-07-02 22:01:04,920 basehttp 6428 11196 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-07-02 22:01:18,398 basehttp 6428 11196 "GET /admin/myapp3/client/1/change/ HTTP/1.1" 200 11644
+INFO 2024-07-02 22:01:18,516 basehttp 6428 11108 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-07-02 22:01:18,516 basehttp 6428 11196 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2024-07-02 22:01:18,518 basehttp 6428 10852 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:01:18,596 basehttp 6428 10852 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-07-02 22:01:18,619 basehttp 6428 10852 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2024-07-02 22:29:06,102 basehttp 6428 9524 "GET /admin/myapp3/client/ HTTP/1.1" 200 10119
+INFO 2024-07-02 22:29:06,202 basehttp 6428 9524 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-07-02 22:29:06,203 basehttp 6428 8224 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:29:06,240 basehttp 6428 8224 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-07-02 22:29:08,010 basehttp 6428 8224 "GET /admin/myapp3/client/add/ HTTP/1.1" 200 11263
+INFO 2024-07-02 22:29:08,091 basehttp 6428 8224 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2024-07-02 22:29:08,096 basehttp 6428 8224 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:29:08,132 basehttp 6428 8224 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-07-02 22:29:45,525 basehttp 6428 8224 "POST /admin/myapp3/client/add/ HTTP/1.1" 302 0
+INFO 2024-07-02 22:29:45,568 basehttp 6428 8224 "GET /admin/myapp3/client/ HTTP/1.1" 200 10729
+INFO 2024-07-02 22:29:45,690 basehttp 6428 8224 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:29:45,780 basehttp 6428 8224 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-07-02 22:30:09,177 basehttp 6428 8224 "GET /admin/myapp3/product/ HTTP/1.1" 200 12150
+INFO 2024-07-02 22:30:09,226 basehttp 6428 8224 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:30:19,089 basehttp 6428 8224 "GET /admin/myapp3/order/ HTTP/1.1" 200 11468
+INFO 2024-07-02 22:30:19,170 basehttp 6428 8224 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:30:22,185 basehttp 6428 8224 "GET /admin/myapp3/order/add/ HTTP/1.1" 200 13132
+INFO 2024-07-02 22:30:22,313 basehttp 6428 8224 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-07-02 22:30:22,315 basehttp 6428 9524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:30:22,356 basehttp 6428 9524 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2024-07-02 22:30:22,395 basehttp 6428 9524 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-07-02 22:30:22,474 basehttp 6428 9524 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-07-02 22:30:39,959 basehttp 6428 9524 "GET /admin/myapp3/product/add/?_to_field=id&_popup=1 HTTP/1.1" 200 6935
+INFO 2024-07-02 22:30:40,009 basehttp 6428 9524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:31:06,657 basehttp 6428 9524 "POST /admin/myapp3/order/add/ HTTP/1.1" 200 13365
+INFO 2024-07-02 22:31:06,750 basehttp 6428 9524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:31:29,230 basehttp 6428 9524 "POST /admin/myapp3/order/add/ HTTP/1.1" 302 0
+INFO 2024-07-02 22:31:29,293 basehttp 6428 9524 "GET /admin/myapp3/order/ HTTP/1.1" 200 12143
+INFO 2024-07-02 22:31:29,379 basehttp 6428 9524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:31:47,997 basehttp 6428 9524 "GET /admin/myapp3/order/5/change/ HTTP/1.1" 200 13525
+INFO 2024-07-02 22:31:48,145 basehttp 6428 9524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:31:52,648 basehttp 6428 9524 "GET /admin/myapp3/order/ HTTP/1.1" 200 11892
+INFO 2024-07-02 22:31:52,734 basehttp 6428 9524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:31:54,410 basehttp 6428 9524 "GET /admin/myapp3/order/2/change/ HTTP/1.1" 200 13537
+INFO 2024-07-02 22:31:54,465 basehttp 6428 9524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:31:57,282 basehttp 6428 9524 "GET /admin/myapp3/order/ HTTP/1.1" 200 11892
+INFO 2024-07-02 22:31:57,331 basehttp 6428 9524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-07-02 22:31:59,300 basehttp 6428 9524 "GET /admin/myapp3/order/3/change/ HTTP/1.1" 200 13533
+INFO 2024-07-02 22:31:59,356 basehttp 6428 9524 "GET /admin/jsi18n/ HTTP/1.1" 200 17546
